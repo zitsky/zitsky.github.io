@@ -1,0 +1,168 @@
+body {
+    margin:0;
+    padding:0;
+
+    .loading {
+        position:fixed;
+        left:0;
+        right:0;
+        bottom:0;
+        top:0;
+        background:gray;
+        z-index:3;
+    }
+
+    .login {
+        position:fixed;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        z-index:2;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        background:url('images/bglogin.jpg') no-repeat center center;
+        background-size:cover;
+
+        .wrap-content {
+                width: 320px;
+                background: #0eabf7;
+                border: 1px solid #0b89c5;
+                padding: 5px;
+                border-radius: 15px;
+                box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+                display: flex;
+                flex-direction: column;     
+                align-items: center;
+
+                h2 {
+                    font: 20px tahoma;
+                    color: #FFF;
+                    margin: 0;
+                    padding: 5px 10px;
+                }
+
+                input {
+                    display:block;
+                    border:1px solid #EAEAEA;
+                    padding:5px 10px;
+                    font:15px tahoma;
+                    width: 100%;
+                    border-radius: 4px;
+                }
+
+                button {
+                    display:inline-block;
+                    color:#FFF;
+                    background:green;
+                    border:1px solid darkgreen;
+                    text-align:center;
+                    padding:5px 20px;
+                    border-radius: 4px;
+                    margin-top:10px;
+                    cursor:pointer;
+                    transition:all 0.5s;
+                    &:hover {
+                        padding:5px 30px;
+                    }
+                }
+        }
+    }
+
+    .chat {
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        display:flex;
+        flex-direction:column;
+        .top {
+            flex-shrink: 0;
+            display:flex;
+            background:#0eabf7;
+            padding:10px 5px;
+            h2 {
+                font:16px tahoma;
+                color:#FFF;
+                margin:0;
+                margin-right:10px;
+            }
+
+            p {
+                font:16px tahoma;
+                color:#fff;
+                font-weight:bold;
+                margin:0;
+            }
+        }
+
+        .messages {
+            flex-grow:2;
+            background:url('images/bglogin.jpg') no-repeat center center;
+            background-size:cover;
+            display:flex;
+            flex-direction:column;
+            justify-content: flex-end;
+            overflow-y:scroll;
+            .ballon {
+                display:block;
+                .content {
+                    text-align: left;
+                    display:inline-block;
+                    font:14px tahoma;
+                    background: #FEFEFE;
+                    border-radius: 5px;
+                    border: 1px solid #FAFAFA;
+                    padding: 5px;
+                    margin: 10px;
+
+                    .message {
+                        font:14px tahoma;
+                    }
+                    h4 {
+                        font-size:12px;
+                        font-weight:bold;
+                        margin:0;
+                    }
+                }
+
+                &.me {
+                    text-align:right;
+                    .content {
+                        background:#0eabf7;
+                        color:#FFF;
+                    }
+                }
+            }
+        }
+
+        .send-line {
+            flex-shrink: 0;
+            display: flex;
+            padding:5px;
+            background:#AAA;
+            input {
+                flex-grow:2;
+                border:1px solid #EEE;
+                padding:5px 10px;
+                border-radius: 5px;
+                font:14px tahoma;
+                margin-right:5px;
+            }
+
+            button {
+                border-radius: 5px;
+                font:16px tahoma;
+                color:#FFF;
+                font-weight:bold;
+                background:#0eabf7;
+                border:0px;
+            }
+        }
+
+
+    }
+
+}

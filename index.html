@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>MICROCHAT</title>
+	<script src="bower_components/peerjs/peer.min.js"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="run.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="loading" id="loading"></div>
+<div class="login" id="login" style="display:none">
+	<div class="wrap-content">
+		<h2>Peer.JS Chat</h2>
+		<input placeholder="Enter login"/>
+		<button class="connect">Connect</button>
+		<button class="create_server">Create Server</button>
+	</div>
+</div>
+<div class="chat" style="display:none;" id="chat">
+	<div class="top"><h2>Chat</h2> <p></p> </div>
+<div class="messages">
+</div>
+<div class="writings">
+
+</div>
+<div class="send-line">
+	<input/>
+	<button>SEND</button>
+</div>
+</div>
+</body>
+</html>
