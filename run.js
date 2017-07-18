@@ -100,7 +100,7 @@ $(function(){
         if(!MyLogin.length)
             return alert("Enter login!");
         $(this).attr("disabled","disabled");
-        peer=new Peer({key: 'u4sivw1wxwrvn29'});
+        peer=new Peer({key: 'u4sivw1wxwrvn29',secure:true});
         peer.on('open', function(id) {
             isServer=true;
             myId=id;
@@ -125,7 +125,7 @@ $(function(){
         if(!MyLogin.length)
             return alert("Enter login!");
         $(this).attr("disabled","disabled");
-        peer=new Peer({key: 'u4sivw1wxwrvn29'});
+        peer=new Peer({key: 'u4sivw1wxwrvn29',secure:true});
         myId=hash;
         MyConnect=peer.connect(hash);
         MyConnect.on("data",onClientRecv);
